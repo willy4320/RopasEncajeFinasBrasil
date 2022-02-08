@@ -452,7 +452,7 @@ section {
 }
 
 .ropas .box-container .box .image {
-  height: 80%;
+  height: 50rem;
   overflow: hidden;
   position: relative;
 }
