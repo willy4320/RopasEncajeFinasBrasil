@@ -239,6 +239,61 @@ section {
   color: #aaa;
 }
 
+.ropas .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 3rem;
+}
+
+.ropas .box-container .box {
+  position: relative;
+}
+
+.ropas .box-container .box:hover .image img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.ropas .box-container .box .image {
+  height: 60rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.ropas .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.ropas .box-container .box .content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.ropas .box-container .box .content h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.ropas .box-container .box .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 1.5rem 0;
+}
+
+.ropas .box-container .box .content .price {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 1.5rem;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,61 +487,6 @@ section {
 .contact .row .form form textarea {
   height: 15rem;
   resize: none;
-}
-
-.ropas .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 3rem;
-}
-
-.ropas .box-container .box {
-  position: relative;
-}
-
-.ropas .box-container .box:hover .image img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.ropas .box-container .box .image {
-  height: 60rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.ropas .box-container .box .image img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.ropas .box-container .box .content {
-  text-align: center;
-  padding: 2rem;
-}
-
-.ropas .box-container .box .content h3 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.ropas .box-container .box .content p {
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #aaa;
-  padding: 1.5rem 0;
-}
-
-.ropas .box-container .box .content .price {
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #aaa;
-  padding: 1.5rem;
 }
 
 .footer {
