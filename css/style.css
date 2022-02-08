@@ -434,7 +434,7 @@ section {
   resize: none;
 }
 
-.blogs .box-container {
+.ropas .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(31rem, 1fr)) [auto-fit];
@@ -442,47 +442,47 @@ section {
   gap: 2rem;
 }
 
-.blogs .box-container .box {
+.ropas .box-container .box {
   position: relative;
 }
 
-.blogs .box-container .box:hover .image img {
+.ropas .box-container .box:hover .image img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.blogs .box-container .box .image {
-  height: 50rem;
+.ropas .box-container .box .image {
+  height: 80%;
   overflow: hidden;
   position: relative;
 }
 
-.blogs .box-container .box .image img {
+.ropas .box-container .box .image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.blogs .box-container .box .content {
+.ropas .box-container .box .content {
   text-align: center;
   padding: 2rem;
 }
 
-.blogs .box-container .box .content h3 {
+.ropas .box-container .box .content h3 {
   font-size: 2rem;
   text-transform: uppercase;
   color: #fff;
 }
 
-.blogs .box-container .box .content p {
+.ropas .box-container .box .content p {
   font-size: 1.5rem;
   line-height: 2;
   color: #aaa;
   padding: 1.5rem 0;
 }
 
-.blogs .box-container .box .content .price {
+.ropas .box-container .box .content .price {
   font-size: 1.5rem;
   line-height: 2;
   color: #aaa;
