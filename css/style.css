@@ -264,7 +264,7 @@ section {
 
 .ropas .box-container .box .image {
   border: 2px solid purple;
-  border-radius: 3%;
+  border-radius: 1%;
   height: 48rem;
   overflow: hidden;
   position: relative;
