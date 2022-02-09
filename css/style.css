@@ -550,17 +550,6 @@ section {
   color: purple;
 }
 
-.footer .footerInfo .social-media a i {
-  color: #fff;
-  font-size: 12px;
-  padding: 10px 0;
-}
-.footer .footerInfo .social-media a i:hover {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  color: purple;
-}
-
 .footer .line2 {
   display: flex;
   width: 100%;
