@@ -494,51 +494,11 @@ section {
   text-align: center;
 }
 
-.footer .footerInfo {
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  justify-content: center;
-}
-
 .footer .footerInfo h1 {
   font-size: 2rem;
   line-height: 2;
   color: #aaa;
   padding-top: 2rem;
-}
-
-.footer .footerInfo .footerMenu {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer .footerInfo .footerMenu a {
-  color: #fff;
-  font-size: 12px;
-  padding: 10px 0;
-}
-
-.footer .footerInfo .footerMenu a:hover {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  color: purple;
-}
-
-.footer .footerInfo .social-media {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer .footerInfo .social-media a {
-  color: #fff;
-  font-size: 12px;
-  padding: 10px 0;
-}
-.footer .footerInfo .social-media a:hover {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  color: purple;
 }
 
 .footer .copyright {
