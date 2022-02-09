@@ -497,24 +497,77 @@ section {
   text-align: center;
 }
 
-.footer h1 {
+.footer .footerInfo {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-around;
+}
+
+.footer .footerInfo h1 {
   font-size: 2rem;
   line-height: 2;
   color: #aaa;
   padding-top: 2rem;
 }
 
-.footer .social-media {
+.footer .footerInfo .footerMenu {
   display: flex;
   flex-direction: column;
 }
 
-.footer .social-media a {
+.footer .footerInfo .footerMenu a {
+  color: #fff;
+  font-size: 12px;
   padding: 10px 0;
 }
 
+.footer .footerInfo .footerMenu a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: purple;
+}
+
+.footer .footerInfo .line {
+  width: 20px;
+  height: 80%;
+  background: purple;
+}
+
+.footer .footerInfo .social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footerInfo .social-media a {
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 0;
+}
+.footer .footerInfo .social-media a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: purple;
+}
+
+.footer .footerInfo .social-media a i {
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 0;
+}
+.footer .footerInfo .social-media a i:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: purple;
+}
+
+.footer .line2 {
+  display: flex;
+  width: 100%;
+  height: 1px;
+}
 .footer .copyright {
-  font-size: 2rem;
+  font-size: 10px;
   line-height: 2;
   color: #aaa;
   padding-top: 2rem;
