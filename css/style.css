@@ -241,6 +241,9 @@ section {
   color: #aaa;
 }
 
+.ropas {
+  background: #1a1a1a;
+}
 .ropas .box-container {
   display: -ms-grid;
   display: grid;
