@@ -241,6 +241,9 @@ section {
   color: #aaa;
 }
 
+.ropas {
+  background: #1a1a1a;
+}
 .ropas .box-container {
   display: -ms-grid;
   display: grid;
@@ -251,7 +254,7 @@ section {
 
 .ropas .box-container .box {
   position: relative;
-  padding: 20px;
+  padding: 50px;
 }
 
 .ropas .box-container .box:hover .image img {
@@ -260,9 +263,9 @@ section {
 }
 
 .ropas .box-container .box .image {
-  border: 3px solid purple;
-  border-radius: 3%;
-  height: 52rem;
+  border: 1px solid purple;
+  border-radius: 1%;
+  height: 48rem;
   overflow: hidden;
   position: relative;
 }
@@ -490,25 +493,22 @@ section {
 }
 
 .footer {
-  background: #1a1a1a;
   text-align: center;
+  background: #1a1a1a;
 }
 
-.footer .footerInfo h1 {
-  font-size: 2rem;
+.footer .links a {
+  margin: 1rem;
+}
+
+.footer .credit {
+  font-size: 1rem;
   line-height: 2;
   color: #aaa;
   padding-top: 2rem;
 }
 
-.footer .copyright {
-  font-size: 10px;
-  line-height: 2;
-  color: #aaa;
-  padding: 2rem 0;
-}
-
-.footer .copyright span {
+.footer .credit span {
   color: purple;
 }
 
