@@ -57,9 +57,9 @@ section {
   color: #fff;
   margin-top: 1rem;
   text-decoration-line: overline underline;
+  text-decoration-style: wavy;
   text-underline-offset: 8px;
   text-decoration-color: #ba55d3;
-  text-decoration-style: wavy;
 }
 
 .btn {
@@ -119,7 +119,7 @@ section {
 }
 
 .header .navbar a:hover {
-  text-decoration: underline;
+  text-decoration: underline wavy;
   text-underline-offset: 1rem;
   color: #ba55d3;
 }
@@ -530,8 +530,8 @@ section {
 }
 
 .footer .footerInfo a:hover {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
+  text-decoration: underline wavy;
+  text-underline-offset: 0.5rem;
   color: #ba55d3;
 }
 
