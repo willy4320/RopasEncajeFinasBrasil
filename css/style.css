@@ -497,18 +497,41 @@ section {
   background: #1a1a1a;
 }
 
-.footer .links a {
-  margin: 1rem;
+.footer .footerInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: left;
 }
 
-.footer .credit {
+.footer .footerInfo h1 {
+  font-size: 2rem;
+  line-height: 2;
+  color: #aaa;
+  padding-top: 2rem;
+}
+
+.footer .footerInfo a {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.footer .footerInfo a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: purple;
+}
+
+.footer .creditos {
   font-size: 1.2rem;
   line-height: 2;
   color: #aaa;
   padding-top: 2rem;
 }
 
-.footer .credit span {
+.footer .creditos span {
   color: purple;
 }
 
