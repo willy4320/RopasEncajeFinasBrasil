@@ -241,9 +241,6 @@ section {
   color: #aaa;
 }
 
-.ropas {
-  background: #1a1a1a;
-}
 .ropas .box-container {
   display: -ms-grid;
   display: grid;
@@ -254,7 +251,7 @@ section {
 
 .ropas .box-container .box {
   position: relative;
-  padding: 50px;
+  padding: 20px;
 }
 
 .ropas .box-container .box:hover .image img {
@@ -263,9 +260,9 @@ section {
 }
 
 .ropas .box-container .box .image {
-  border: 1px solid purple;
-  border-radius: 1%;
-  height: 48rem;
+  border: 3px solid purple;
+  border-radius: 3%;
+  height: 52rem;
   overflow: hidden;
   position: relative;
 }
@@ -501,7 +498,7 @@ section {
   display: flex;
   flex-direction: row;
   text-align: left;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .footer .footerInfo h1 {
@@ -528,12 +525,6 @@ section {
   color: purple;
 }
 
-.footer .footerInfo .line {
-  width: 20px;
-  height: 80%;
-  background: purple;
-}
-
 .footer .footerInfo .social-media {
   display: flex;
   flex-direction: column;
@@ -550,16 +541,11 @@ section {
   color: purple;
 }
 
-.footer .line2 {
-  display: flex;
-  width: 100%;
-  height: 1px;
-}
 .footer .copyright {
   font-size: 10px;
   line-height: 2;
   color: #aaa;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .footer .copyright span {
