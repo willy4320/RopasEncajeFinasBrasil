@@ -251,6 +251,7 @@ section {
 
 .ropas .box-container .box {
   position: relative;
+  padding: 20px;
 }
 
 .ropas .box-container .box:hover .image img {
@@ -259,6 +260,8 @@ section {
 }
 
 .ropas .box-container .box .image {
+  border: 3px solid purple;
+  border-radius: 3%;
   height: 52rem;
   overflow: hidden;
   position: relative;
