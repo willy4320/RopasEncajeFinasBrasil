@@ -259,7 +259,7 @@ section {
 
 .ropas .box-container .box {
   position: relative;
-  margin: 50px;
+  margin: 0 50px;
 }
 
 .ropas .box-container .box:hover .image img {
