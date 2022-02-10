@@ -6,6 +6,8 @@ searchBtn.onclick = () =>{
    searchForm.classList.toggle('active');
    menuBtn.classList.remove('fa-times');
    navbar.classList.remove('active');
+   menuCart.classList.remove('cartAnimation');
+   cartBar.classList.remove('active');
 }
 
 let menuBtn = document.querySelector('#menu-btn');
@@ -16,6 +18,8 @@ menuBtn.onclick = () =>{
    navbar.classList.toggle('active');
    searchBtn.classList.remove('fa-times');
    searchForm.classList.remove('active');
+   menuCart.classList.remove('cartAnimation');
+   cartBar.classList.remove('active');
 }
 
 let menuCart = document.querySelector('#menuCart');
@@ -24,9 +28,10 @@ let cartBar = document.querySelector('.header .cartBar');
 menuCart.onclick = () =>{
    menuCart.classList.toggle('cartAnimation');
    cartBar.classList.toggle('active');
-   console.log("hola");
    searchBtn.classList.remove('fa-times');
    searchForm.classList.remove('active');
+   menuBtn.classList.remove('fa-times');
+   navbar.classList.remove('active');
 }
 
 window.onscroll = () =>{
