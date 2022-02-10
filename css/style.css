@@ -120,7 +120,10 @@ section {
 
 .header .cartBar {
   position: absolute;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
   top: 99%;
   right: 0;
   left: 50%;
@@ -134,16 +137,34 @@ section {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.header .cartBar a {
+.header .cartBar .titulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+.header .cartBar .titulos p {
   color: #fff;
   font-size: 1.4rem;
-  margin: 0 10rem;
 }
 
-.header .cartBar a:hover {
-  text-decoration: underline wavy;
-  text-underline-offset: 1rem;
-  color: #ba55d3;
+.header .cartBar .linea-divisoria {
+  margin: -22px 10% 0 10%;
+  height: 1px;
+  width: 80%;
+  background: #ba55d3;
+}
+
+.header .cartBar .subTitulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.header .cartBar .subTitulos a {
+  color: #fff;
+  font-size: 0.8rem;
 }
 
 .header .navbar a {
@@ -166,7 +187,7 @@ section {
 .header .logo {
   position: absolute;
   top: 2rem;
-  left: 47.6%;
+  left: 49.7%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -604,10 +625,6 @@ section {
 
   .header .cartBar {
     left: 0;
-  }
-
-  .header .cartBar a {
-    margin: 0 4rem;
   }
 
   .header .navbar {
