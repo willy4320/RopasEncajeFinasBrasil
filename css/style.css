@@ -248,8 +248,9 @@ section {
 }
 
 .ropas {
-  margin-top: 50px;
+  margin: 100px 0px;
 }
+
 .ropas .box-container {
   display: -ms-grid;
   display: grid;
@@ -260,7 +261,8 @@ section {
 
 .ropas .box-container .box {
   position: relative;
-  margin: 0 50px;
+  background: #1a1a1a;
+  margin: 0 30px;
 }
 
 .ropas .box-container .box:hover .image img {
@@ -269,9 +271,7 @@ section {
 }
 
 .ropas .box-container .box .image {
-  border: 1px solid #ba55d3;
-  border-radius: 2%;
-  height: 38rem;
+  height: 42rem;
   overflow: hidden;
   position: relative;
 }
@@ -296,16 +296,14 @@ section {
 
 .ropas .box-container .box .content p {
   font-size: 1.5rem;
-  line-height: 2;
   color: #aaa;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 }
 
 .ropas .box-container .box .content .price {
   font-size: 1.5rem;
-  line-height: 2;
   color: #aaa;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .about {
@@ -327,8 +325,6 @@ section {
 }
 
 .about .image img {
-  border: 1px solid #ba55d3;
-  border-radius: 2%;
   width: 100%;
 }
 
