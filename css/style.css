@@ -113,6 +113,39 @@ section {
   display: none;
 }
 
+.header .cartAnimation {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.header .cartBar {
+  position: absolute;
+  text-align: center;
+  top: 99%;
+  right: 0;
+  left: 50%;
+  background: #1a1a1a;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.header .cartBar.active {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header .cartBar a {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0 10rem;
+}
+
+.header .cartBar a:hover {
+  text-decoration: underline wavy;
+  text-underline-offset: 1rem;
+  color: #ba55d3;
+}
+
 .header .navbar a {
   color: #fff;
   font-size: 1.4rem;
@@ -568,6 +601,15 @@ section {
     position: absolute;
     left: 3rem;
   }
+
+  .header .cartBar {
+    left: 0;
+  }
+
+  .header .cartBar a {
+    margin: 0 4rem;
+  }
+
   .header .navbar {
     position: absolute;
     top: 99%;
@@ -577,14 +619,17 @@ section {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
+
   .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
+
   .header .navbar a {
     display: block;
     margin: 3rem 2rem;
   }
+
   .header .navbar .space {
     display: none;
   }
