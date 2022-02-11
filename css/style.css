@@ -118,12 +118,11 @@ section {
   transform: translateY(-5px);
 }
 
-.header .cartBar {
+.header .table {
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100px;
   top: 99%;
   right: 0;
   left: 50%;
@@ -132,39 +131,9 @@ section {
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
-.header .cartBar.active {
+.header .table.active {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.header .cartBar .titulos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-}
-.header .cartBar .titulos p {
-  color: #fff;
-  font-size: 1.4rem;
-}
-
-.header .cartBar .linea-divisoria {
-  margin: -22px 10% 0 10%;
-  height: 1px;
-  width: 80%;
-  background: #ba55d3;
-}
-
-.header .cartBar .subTitulos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.header .cartBar .subTitulos a {
-  color: #fff;
-  font-size: 0.8rem;
 }
 
 .header .navbar a {
@@ -308,7 +277,7 @@ section {
 .ropas .box-container .box {
   position: relative;
   background: #1a1a1a;
-  margin: 30px 30px;
+  margin: 30px 20px;
 }
 
 .ropas .box-container .box:hover .image img {
@@ -317,7 +286,7 @@ section {
 }
 
 .ropas .box-container .box .image {
-  height: 42rem;
+  height: 38rem;
   overflow: hidden;
   position: relative;
 }
@@ -340,16 +309,22 @@ section {
   color: #fff;
 }
 
-.ropas .box-container .box .content p {
+.ropas .box-container .box .content h1 {
   font-size: 1.5rem;
   color: #aaa;
   padding: 2rem 0;
 }
 
-.ropas .box-container .box .content .price {
+.ropas .box-container .box .content p {
   font-size: 1.5rem;
   color: #aaa;
-  padding: 2rem;
+}
+.ropas .box-container .box .content span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #aaa;
 }
 
 .about {
@@ -528,7 +503,7 @@ section {
     left: 3rem;
   }
 
-  .header .cartBar {
+  .header .table {
     left: 0;
   }
 
@@ -560,6 +535,12 @@ section {
 @media (max-width: 768px) {
   .home .content h3 {
     font-size: 2.5rem;
+  }
+
+  .ropas .box-container .box .image {
+    height: 52rem;
+    overflow: hidden;
+    position: relative;
   }
 }
 

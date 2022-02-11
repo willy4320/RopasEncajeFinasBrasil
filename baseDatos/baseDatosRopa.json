@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "title": "Titulo",
+        "description": "descripcion",
+        "price": 20
+    },
+    {
+        "id": 2,
+        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "title": "Titulo",
+        "description": "descripcion",
+        "price": 20
+    },
+    {
+        "id": 3,
+        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "title": "Titulo",
+        "description": "descripcion",
+        "price": 20
+    },
+    {
+        "id": 4,
+        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "title": "Titulo",
+        "description": "descripcion",
+        "price": 20
+    },
+    {
+        "id": 5,
+        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "title": "Titulo",
+        "description": "descripcion",
+        "price": 20
+    },
+    {
+        "id": 6,
+        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "title": "Titulo",
+        "description": "descripcion",
+        "price": 20
+    }
+    
+    
+]
