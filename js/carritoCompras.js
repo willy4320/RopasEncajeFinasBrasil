@@ -56,10 +56,9 @@ const addCarrito = e => {
 const setCarrito = item => {
     // console.log(item)
     const producto = {
-        id: item.querySelector('a').dataset.id,
+        id: item.querySelector('.btn-dark').dataset.id,
         title: item.querySelector('h3').textContent,
         precio: item.querySelector('p').textContent,
-        
         cantidad: 1
     }
     // console.log(producto)
@@ -75,13 +74,11 @@ const setCarrito = item => {
 const pintarCarrito = () => {
     items.innerHTML = ''
 
-
-
-
     Object.values(carrito).forEach(producto => {
-        templateCarrito.querySelector('button').textContent.id = producto.id
-        templateCarrito.querySelector('h3').textContent = producto.title
-        templateCarrito.querySelector('p').textContent = producto.price * producto.cantidad
+        templateCarrito.querySelector('th').textContent = producto.id
+        templateCarrito.querySelectorAll('td')[0].textContent = producto.title
+        templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
+        templateCarrito.querySelector('span').textContent = producto.precio * producto.cantidad
         
         //botones
         templateCarrito.querySelector('.btn-info').dataset.id = producto.id
@@ -93,8 +90,6 @@ const pintarCarrito = () => {
     items.appendChild(fragment)
 
     pintarFooter()
-
-    localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 const pintarFooter = () => {
@@ -127,6 +122,7 @@ const pintarFooter = () => {
     })
 
 }
+
 
 const btnAumentarDisminuir = e => {
     // console.log(e.target.classList.contains('btn-info'))
