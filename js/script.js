@@ -25,6 +25,7 @@ menuBtn.onclick = () =>{
 let menuCart = document.querySelector('#menuCart');
 let table = document.querySelector('.header .table');
 
+
 menuCart.onclick = () =>{
    menuCart.classList.toggle('cartAnimation');
    table.classList.toggle('active');
