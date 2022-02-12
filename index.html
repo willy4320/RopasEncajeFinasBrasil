@@ -1,275 +1,131 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ropas De Encaje Finas Brasil</title>
-
-    <!-- font awesome cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    <title>Gilda</title>
+    <link rel="stylesheet" href="style.css" />
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <!-- header section starts  -->
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="shop.html">Productos</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li id="cart-desktop">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+          <a href="#" id="leave"><i class="fas fa-outdent"></i></a>
+        </ul>
+      </div>
 
-    <header class="header">
-      <div id="menu-btn" class="fas fa-bars icons"></div>
-      <div id="search-btn" class="fas fa-search icons"></div>
-
-      <nav class="navbar">
-        <a href="#home">inicio</a>
-        <a href="#ropas">ropa</a>
-        <span class="space"></span>
-        <a href="#about">sobre</a>
-        <a href="#reviews">ventas</a>
-      </nav>
-
-      <div id="menuCart" class="fas fa-shopping-cart icons carritoIcono"></div>
-
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Articulo</th>
-            <th scope="col">Cantidad</th>
-            <th scope="col">Agregar | sacar (+ / -)</th>
-            <th scope="col">Total</th>
-          </tr>
-        </thead>
-        <tbody id="items"></tbody>
-        
-        <tfoot style="display: flex; position:relative; bottom: 0px;justify-content: space-around;">
-          <tr id="footer">
-            <th>Carrito vacío - comience a comprar!</th>
-          </tr>
-        </tfoot>
-      </table>
-
-      <template id="template-footer">
-        <th>Total productos:<td>10</td></th>
-        
-
-        <td>
-          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-            vaciar todo
-          </button>
-        </td>
-        <td class="font-weight-bold">$ <span>5000</span></td>
-      </template>
-
-      <template id="template-carrito">
-        <tr>
-          <th scope="row">id</th>
-          <td>Café</td>
-          <td>1</td>
-          <td>
-            <button class="btn btn-info btn-sm">+</button>
-            <button class="btn btn-danger btn-sm">-</button>
-          </td>
-          <td>$ <span>500</span></td>
-        </tr>
-      </template>
-
-      <a href="#home" class="logo"><img src="images/logo.png" alt="" /></a>
-
-      <form action="" class="search-form">
-        <input
-          type="search"
-          name=""
-          placeholder="Busque aqui..."
-          id="search-box"
-        />
-        <label for="search-box" class="fas fa-search icons"></label>
-      </form>
-    </header>
-
-    <!-- header section ends  -->
-
-    <!-- home section starts  -->
-
-    <section class="home" id="home">
-      <div class="content">
-        <img
-          data-aos="fade-up"
-          data-aos-delay="100"
-          src="images/imgPortada.jpg"
-          alt=""
-        />
-        <h3 data-aos="fade-up" data-aos-delay="100">
-          Escoja tu pieza de ropa favorita
-        </h3>
-        <p data-aos="fade-up" data-aos-delay="150">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at
-          fuga aliquam ipsa recusandae repellat laudantium pariatur amet culpa
-          cum.
-        </p>
+      <div id="mobile">
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
       </div>
     </section>
 
-    <!-- home section ends -->
+    <section id="hero">
+      <h4>Buenos precios</h4>
+      <h2>Diversos modelos</h2>
+      <h1>Piezas de calidad</h1>
+      <p>Escoja tu ropa favorita</p>
+    </section>
 
-    <!-- service sectioin starts  -->
-
-    <section class="service">
-      <div class="box" data-aos="fade-up" data-aos-delay="100">
+    <section id="feature" class="section-p1">
+      <div class="fe-box">
         <i class="fas fa-tshirt"></i>
-        <h3>buena calidad</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
-          cum.
-        </p>
+        <h6>buena calidad</h6>
       </div>
 
-      <div class="box" data-aos="fade-up" data-aos-delay="150">
+      <div class="fe-box">
+        <i class="fas fa-headset"></i>
+        <h6>entrega planeada</h6>
+      </div>
+
+      <div class="fe-box">
         <i class="fas fa-shipping-fast"></i>
-        <h3>entrega planeada</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
-          cum.
-        </p>
+        <h6>envios a domicilio</h6>
       </div>
     </section>
 
-    <!-- service sectioin ends -->
-
-    <!-- ropas section starts  -->
-
-    <section class="ropas" id="ropas" data-aos="fade-up" data-aos-delay="150">
-      <div class="heading">
-        <h3>ropa</h3>
-      </div>
-
-      <div
-        id="cards"
-        class="box-container"
-        data-aos="fade-up"
-        data-aos-delay="150"
-      >
-        <!-- row START -->
+    <section id="product1" class="section-p1">
+      <h2>Productos Nuevos</h2>
+      <p>Nueva Coleccion</p>
+      <div id="cards" class="pro-container">
         <template id="template-card">
-          <div class="box">
-            <div class="image">
-              <img src="images/ropas/blog-1.jpg" alt="" />
+          <div class="pro">
+            <img src="" alt="" />
+            <div class="des">
+              <span>marca</span>
+              <h5>Titulo ropa</h5>
+              <h4>
+                50
+                <h4>$</h4>
+              </h4>
             </div>
-            <div class="content">
-              <h3>Titulo</h3>
-              <h1>Descripcion</h1>
-              <span
-                >$
-                <p class="price">20</p></span
-              >
-              <a class="btn btn-dark">Agregar Carrito</a>
-            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
           </div>
         </template>
       </div>
     </section>
 
-    <!-- ropas section ends -->
+    <footer class="section-p1">
+      <div class="info">
+        <div class="col">
+          <h4>Contacto</h4>
+          <p class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <a href="#">Facebook</a>
+          </p>
 
-    <!-- about section starts  -->
+          <p class="social-media">
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="#">WhatsApp</a>
+          </p>
 
-    <div
-      class="heading"
-      style="margin-top: 4rem"
-      data-aos="fade-up"
-      data-aos-delay="100"
-    >
-      <h3>Sobre</h3>
-    </div>
-    <section class="about" id="about">
-      <div class="image" data-aos="fade-right" data-aos-delay="100">
-        <img src="images/about-img.png" alt="" />
-      </div>
-
-      <div class="content" data-aos="fade-left" data-aos-delay="150">
-        <h3 class="title">Conozca mas sobre ropas encaje finas brasil</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, veniam
-          error fugit quasi perspiciatis blanditiis quo, sint beatae ut, commodi
-          fuga illo reprehenderit ea voluptatibus earum fugiat obcaecati
-          doloremque? Aspernatur?
-        </p>
-        <div class="icons">
-          <h3><i class="fas fa-check"></i> Buen precio</h3>
-          <h3><i class="fas fa-check"></i> Buen servicio</h3>
-          <h3><i class="fas fa-check"></i> Entrega planeada</h3>
-        </div>
-        <a href="#" class="btn">read more</a>
-      </div>
-    </section>
-
-    <!-- about section ends -->
-
-    <!-- reviews section starts  -->
-
-    <section class="reviews" id="reviews">
-      <div class="heading" class="box" data-aos="fade-up" data-aos-delay="100">
-        <h3>VENTAS</h3>
-      </div>
-
-      <div class="box-container">
-        <div class="box" data-aos="fade-up" data-aos-delay="100">
-          <img src="images/gilda.png" alt="" />
-          <h3>Gilda</h3>
-          <p>Dueña de la tienda</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- reviews section ends -->
-
-    <!-- footer section starts  -->
-
-    <section class="footer">
-      <div class="footerInfo">
-        <span class="bloque"></span>
-        <div class="footerMenu">
-          <h1>Menú</h1>
-          <a href="#home">home</a>
-          <a href="#ropas">ropa</a>
-          <a href="#about">sobre</a>
-          <a href="#reviews">ventas</a>
+          <p><strong>Horario:</strong> 09:00 - 18:00, Lun - Vi</p>
         </div>
 
-        <div class="footerContacto">
-          <h1>Contacto</h1>
-          <a href="https://www.facebook.com/ropaencaje/">Facebook</a>
-          <a href="#">WhatsApp</a>
+        <div class="col">
+          <h4>Cuentas</h4>
+          <a href="#">Login</a>
+          <a href="#">Mi Carrito</a>
+          <a href="#">Mis Favoritos</a>
+          <a href="#">Ayuda</a>
         </div>
-        <span class="bloque"></span>
+
+        <div class="col">
+          <h4>Sobre</h4>
+          <a href="#">Vendedora</a>
+          <a href="#">Tienda</a>
+          <a href="#">Datos Bancarios</a>
+        </div>
+
+        <div class="col">
+          <h4>Productos</h4>
+          <a href="#">Estilo de ropa</a>
+          <a href="#">Estilo de ropa</a>
+          <a href="#">Estilo de ropa</a>
+        </div>
+
+        <div class="copyright">
+          creado por <span>welliton da costa</span> | copyright &copy;2022
+        </div>
       </div>
-      <p class="creditos">
-        creado por <span>welliton da costa</span> | copyright &copy;2022
-      </p>
-    </section>
+    </footer>
 
-    <!-- footer section ends -->
-
-    <!-- Templates -->
-
-    <!-- Templates -->
-
-    <!-- custom js file link      -->
     <script src="js/script.js"></script>
-    <script src="js/carritoCompras.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-    <script>
-      AOS.init({
-        duration: 800,
-      });
-    </script>
+    <script src="js/agregarRopas.js"></script>
   </body>
 </html>

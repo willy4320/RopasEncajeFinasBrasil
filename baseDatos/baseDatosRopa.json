@@ -1,46 +1,85 @@
 [
     {
         "id": 1,
-        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "brand": "marca",
         "title": "Titulo",
+        "price": 20,
         "description": "descripcion",
-        "price": 20
+        "size":"tamano"
+        
     },
     {
         "id": 2,
-        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "brand": "marca",
         "title": "Titulo",
+        "price": 20,
         "description": "descripcion",
-        "price": 20
+        "size":"tamano"
+        
     },
     {
         "id": 3,
-        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "brand": "marca",
         "title": "Titulo",
+        "price": 20,
         "description": "descripcion",
-        "price": 20
+        "size":"tamano"
+        
     },
     {
         "id": 4,
-        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "brand": "marca",
         "title": "Titulo",
+        "price": 20,
         "description": "descripcion",
-        "price": 20
+        "size":"tamano"
+        
     },
     {
         "id": 5,
-        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "brand": "marca",
         "title": "Titulo",
+        "price": 20,
         "description": "descripcion",
-        "price": 20
+        "size":"tamano"
+        
     },
     {
         "id": 6,
-        "thumbnailUrl": "images/ropas/blog-1.jpg",
+        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "brand": "marca",
         "title": "Titulo",
+        "price": 20,
         "description": "descripcion",
-        "price": 20
+        "size":"tamano"
+        
+    },
+    {
+        "id": 7,
+        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "brand": "marca",
+        "title": "Titulo",
+        "price": 20,
+        "description": "descripcion",
+        "size":"tamano"
+        
+    },
+    {
+        "id": 8,
+        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "brand": "marca",
+        "title": "Titulo",
+        "price": 20,
+        "description": "descripcion",
+        "size":"tamano"
+        
     }
+    
     
     
 ]

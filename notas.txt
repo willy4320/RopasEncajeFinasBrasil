@@ -1,0 +1,12 @@
+colores:
+    - Gris Oscuro: #2a2a2a
+    - Gris Claro: #606063
+    - Morado Ocuro: #ba55d3
+    - Rosado: #d8bfd8 
+    - Rosado Claro: #fddde4
+    - Azul Claro: #e3e6f3
+    - Verde Claro: #cce7d0
+
+    
+
+
