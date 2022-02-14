@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "thumbnailUrl": "../img/productos/ropa1.jpg",
         "brand": "marca",
         "title": "Titulo",
         "price": 20,
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "thumbnailUrl": "../img/productos/ropa1.jpg",
         "brand": "marca",
         "title": "Titulo",
         "price": 20,
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "thumbnailUrl": "../img/productos/ropa1.jpg",
         "brand": "marca",
         "title": "Titulo",
         "price": 20,
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "thumbnailUrl": "../img/productos/ropa1.jpg",
         "brand": "marca",
         "title": "Titulo",
         "price": 20,
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "thumbnailUrl": "../img/productos/ropa1.jpg",
         "brand": "marca",
         "title": "Titulo",
         "price": 20,
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "thumbnailUrl": "../img/productos/ropa1.jpg",
         "brand": "marca",
         "title": "Titulo",
         "price": 20,
@@ -61,7 +61,7 @@
     },
     {
         "id": 7,
-        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "thumbnailUrl": "../img/productos/ropa1.jpg",
         "brand": "marca",
         "title": "Titulo",
         "price": 20,
@@ -71,7 +71,7 @@
     },
     {
         "id": 8,
-        "thumbnailUrl": "img/productos/ropa1.jpg",
+        "thumbnailUrl": "../img/productos/ropa1.jpg",
         "brand": "marca",
         "title": "Titulo",
         "price": 20,

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
 // Traer productos
 const fetchData = async () => {
-    const res = await fetch('baseDatos/baseDatosRopa.json');
+    const res = await fetch('../baseDatos/baseDatosRopa.json');
     const data = await res.json()
     console.log(data)
     pintarCards(data)

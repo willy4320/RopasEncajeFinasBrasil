@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="#"><img src="../img/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="shop.html" class="active">Productos</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li id="cart-desktop">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+          <a href="#" id="leave"><i class="fas fa-outdent"></i></a>
+        </ul>
+      </div>
+
+      <div id="mobile">
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+      <div class="single-pro-image">
+        <img
+          src="../img/productos/ropa1.jpg"
+          width="100%"
+          id="MainImg"
+          alt=""
+        />
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img
+              src="../img/productos/ropa1.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="../img/productos/ropa1.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="../img/productos/ropa1.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="single-pro-details">
+        <h6>Inicio / Titulo</h6>
+        <h4>Titulo</h4>
+        <h2>20$</h2>
+        <select>
+          <option>Select Size</option>
+          <option>XL</option>
+          <option>XXL</option>
+          <option>Small</option>
+          <option>Large</option>
+        </select>
+        <input type="number" value="1" />
+        <button class="normal">Agregar Al Carrito</button>
+        <h4>Detalles Del Producto</h4>
+        <span
+          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          doloribus eius aspernatur sit nulla sequi, corrupti provident quidem
+          saepe. Cumque, nulla! Ducimus doloribus esse fugiat veritatis.
+          Exercitationem laboriosam corporis perspiciatis.</span
+        >
+      </div>
+    </section>
+
+    <script>
+      var MainImg = document.getElementById("MainImg");
+      var smallimg = document.getElementsByClassName("small-img");
+      smallimg[0].onclick = function () {
+        MainImg.src = smallimg[0].src;
+      };
+      smallimg[1].onclick = function () {
+        MainImg.src = smallimg[1].src;
+      };
+      smallimg[2].onclick = function () {
+        MainImg.src = smallimg[2].src;
+      };
+      smallimg[3].onclick = function () {
+        MainImg.src = smallimg[3].src;
+      };
+    </script>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Registro</h4>
+        <p>
+          Obtendras mails sobre ofertas en la pagina<span
+            >ofertas especiales</span
+          >
+        </p>
+      </div>
+
+      <div class="form">
+        <input type="text" placeholder="Ingrese el mail aqui" />
+        <button class="normal">Registrate</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="info">
+        <div class="col">
+          <h4>Contacto</h4>
+
+          <p class="social-media">
+            <a href="https://www.facebook.com/ropaencaje/"
+              >Facebook: ropaencaje</a
+            >
+          </p>
+
+          <p class="social-media">
+            <a href="#">WhatsApp: </a>
+          </p>
+
+          <p>Horario: 09:00 - 18:00, Lun - Vi</p>
+        </div>
+
+        <div class="col">
+          <h4>Cuentas</h4>
+          <a href="#">Login</a>
+          <a href="#">Mi Carrito</a>
+          <a href="#">Mis Favoritos</a>
+          <a href="#">Ayuda</a>
+        </div>
+
+        <div class="col">
+          <h4>Sobre</h4>
+          <a href="#">Vendedora</a>
+          <a href="#">Tienda</a>
+          <a href="#">Datos Bancarios</a>
+        </div>
+
+        <div class="col">
+          <h4>Productos</h4>
+          <a href="#">Estilo de ropa</a>
+          <a href="#">Estilo de ropa</a>
+          <a href="#">Estilo de ropa</a>
+        </div>
+
+        <div class="copyright">
+          creado por <span>welliton da costa</span> | copyright &copy;2022
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
