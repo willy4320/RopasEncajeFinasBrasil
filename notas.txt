@@ -6,6 +6,7 @@ colores:
     - Rosado Claro: #fddde4
     - Azul Claro: #e3e6f3
     - Verde Claro: #cce7d0
+    - Fondo Hero : #eaf2f8
 
     
 
