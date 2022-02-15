@@ -42,11 +42,37 @@
       <p>En desarrollo</p>
     </section>
 
+    <section id="product1" class="section-p1">
+      <h2>Productos Nuevos</h2>
+      <p>Nueva Coleccion</p>
+      <div id="cards" class="pro-container">
+        <template id="template-card">
+          <div class="pro">
+            <img
+              src=""
+              alt=""
+              onclick="window.location.href='sproduct.html';"
+            />
+            <div class="des">
+              <span>marca</span>
+              <h5>Titulo ropa</h5>
+              <h4>
+                50
+                <h4>$</h4>
+              </h4>
+            </div>
+            <a class="fas fa-shopping-cart cart btn-dark"> </a>
+          </div>
+        </template>
+      </div>
+    </section>
+
     <section id="cart" class="section-p1">
       <table width="100%">
         <thead>
           <tr>
             <td>Eliminar</td>
+            <td>id</td>
             <td>Imagen</td>
             <td>Producto</td>
             <td>Precio</td>
@@ -54,27 +80,22 @@
             <td>Subtotal</td>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href="#"><i class="far fa-times-circle"></i></a>
-            </td>
-            <td><img src="../img/productos/ropa1.jpg" alt="" /></td>
-            <td>Titulo</td>
-            <td>Precio</td>
-            <td><input type="number" value="1" /></td>
-            <td>Subtotal</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#"><i class="far fa-times-circle"></i></a>
-            </td>
-            <td><img src="../img/productos/ropa1.jpg" alt="" /></td>
-            <td>Titulo</td>
-            <td>Precio</td>
-            <td><input type="number" value="1" /></td>
-            <td>Subtotal</td>
-          </tr>
+        <tbody id="items">
+          <template id="template-carrito">
+            <tr>
+              <td>
+                <a href="#"><i class="far fa-times-circle"></i></a>
+              </td>
+              <td class="id">id</td>
+              <td><img src="../img/productos/ropa1.jpg" alt="" /></td>
+              <td class="titulo">Titulo</td>
+              <td class="precio">Precio</td>
+              <td>
+                <input id="botonAD" type="number" value="1" />
+              </td>
+              <td class="subtotal">Subtotal</td>
+            </tr>
+          </template>
         </tbody>
       </table>
     </section>
