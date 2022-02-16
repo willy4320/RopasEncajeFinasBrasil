@@ -63,7 +63,7 @@ button.normal {
   z-index: 999;
 }
 #header .logo {
-  width: 24px;
+  width: 30px;
 }
 
 #navbar {
@@ -104,6 +104,10 @@ button.normal {
 #mobile {
   display: none;
   align-items: center;
+}
+
+#mobileCart {
+  display: none;
 }
 
 #leave {
@@ -207,7 +211,7 @@ button.normal {
   position: relative;
 }
 #product1 .pro:hover {
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
 #product1 .pro img {
@@ -257,7 +261,7 @@ button.normal {
 }
 
 #product1 .pro .cart:hover {
-  transform: translateY(-8px);
+  transform: scale(0.85);
 }
 
 #newsletter {
@@ -327,10 +331,6 @@ footer .col {
   align-items: flex-start;
   margin-bottom: 20px;
   margin-right: 20px;
-}
-
-footer .logo {
-  padding-top: 30px;
 }
 
 footer .social-media i {
@@ -615,7 +615,7 @@ footer .copyright span {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
+    left: -300px;
     height: 100vh;
     width: 300px;
     background-color: #e3e6f3;
@@ -624,32 +624,44 @@ footer .copyright span {
     transition: 0.3s ease;
   }
 
+  #header .logo {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+  }
+
   #navbar li {
     margin-bottom: 25px;
   }
   #navbar.active {
-    right: 0;
+    left: 0;
   }
 
-  #mobile {
+  #mobile,
+  #mobileCart {
     display: flex;
   }
 
-  #mobile i {
+  #mobile i,
+  #mobileCart i {
     color: #1a1a1a;
     font-size: 24px;
-    padding-left: 20px;
+  }
+
+  #bar {
+    transform: rotate(180deg);
   }
 
   #leave {
     position: absolute;
     top: 20px;
-    left: 30px;
+    right: 30px;
     color: #1a1a1a;
     font-size: 24px;
-    transform: rotate(180deg);
     display: initial;
   }
+
   #cart-desktop {
     display: none;
   }
