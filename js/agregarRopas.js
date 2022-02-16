@@ -1,8 +1,6 @@
 const cards = document.getElementById('cards')
 const templateCard = document.getElementById('template-card').content
 const fragment = document.createDocumentFragment()
-const items = document.getElementById('items')
-const templateCarrito = document.getElementById('template-carrito').content
 let carrito = {}
 
 // Eventos
@@ -61,31 +59,11 @@ const setCarrito = objeto =>{
     carrito[producto.id] = { ...producto }
 
     console.log(producto)
-    pintarCarrito()
-}
-
-// Pintar carrito con productos seleccionados
-const pintarCarrito = () => {
-    items.innerHTML = ''
-
-    Object.values(carrito).forEach(producto => {
-        templateCarrito.querySelector('.id').textContent = producto.id
-        templateCarrito.querySelector('img').setAttribute("scr", producto.thumbnailUrl)
-        templateCarrito.querySelector('.titulo').textContent = producto.title
-        templateCarrito.querySelector('.precio').textContent = producto.price
-        templateCarrito.querySelector('input').setAttribute("value",producto.cantidad)
-        templateCarrito.querySelector('.subtotal').textContent = producto.price * templateCarrito.querySelector('input').getAttribute("value")
-        
-      
-        const clone = templateCarrito.cloneNode(true)
-        fragment.appendChild(clone)
-    })
-    items.appendChild(fragment)
-
-    //pintarFooter()
 
     localStorage.setItem('carrito', JSON.stringify(carrito))
+    
 }
+
 
 
 
