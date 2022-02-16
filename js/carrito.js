@@ -17,7 +17,6 @@ const pintarCarrito = () => {
     items.innerHTML = ''
 
     Object.values(carrito).forEach(producto => {
-        templateCarrito.querySelector('.id').textContent = producto.id
         templateCarrito.querySelector('img').setAttribute("src", producto.thumbnailUrl)
         templateCarrito.querySelector('.titulo').textContent = producto.title
         templateCarrito.querySelector('.precio').textContent = producto.price

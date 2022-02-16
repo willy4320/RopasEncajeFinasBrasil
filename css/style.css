@@ -49,6 +49,24 @@ button.normal {
   transition: 0.2s;
 }
 
+#cart {
+  overflow-x: auto;
+}
+
+#cart::-webkit-scrollbar-track-piece {
+  background: #cce7d0;
+}
+
+#cart::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+#cart::-webkit-scrollbar-thumb {
+  background-color: #088178; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #ba55d3; /* creates padding around scroll thumb */
+}
+
 /*header starts*/
 #header {
   display: flex;
@@ -480,10 +498,6 @@ footer .copyright span {
 
 /*Cart starts*/
 
-#cart {
-  overflow-x: auto;
-}
-
 #cart table {
   width: 100%;
   border-collapse: collapse;
@@ -513,18 +527,17 @@ footer .copyright span {
 }
 #cart table td:nth-child(4),
 #cart table td:nth-child(5),
-#cart table td:nth-child(6),
-#cart table td:nth-child(7) {
+#cart table td:nth-child(6) {
   width: 150px;
   text-align: center;
 }
-#cart table td:nth-child(6) input {
+#cart table td:nth-child(5) input {
   width: 70px;
   padding: 10px 5px 10px 15px;
 }
 
 #cart table thead {
-  border: 1px solid #e2e9e1;
+  border-bottom: 1px solid #e2e9e1;
   border-left: none;
   border-right: none;
 }
@@ -604,6 +617,16 @@ footer .copyright span {
 /*Contacto ends*/
 
 /*Media starts*/
+
+@media (max-width: 1200px) {
+  #cart table {
+    background: #eaf2f8;
+    border-radius: 15px;
+    box-shadow: 0 40px 60px rgba(0.1, 0, 0, 0.06);
+    margin: 20px;
+  }
+}
+
 @media (max-width: 821px) {
   .section-p1 {
     padding: 40px 40px;
