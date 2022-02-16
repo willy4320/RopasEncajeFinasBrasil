@@ -625,10 +625,7 @@ footer .copyright span {
   }
 
   #header .logo {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    bottom: 18px;
+    display: none;
   }
 
   #navbar li {
