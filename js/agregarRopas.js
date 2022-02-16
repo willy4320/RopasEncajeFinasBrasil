@@ -60,8 +60,7 @@ const setCarrito = objeto =>{
 
     console.log(producto)
 
-    localStorage.setItem('carrito', JSON.stringify(carrito))
-    
+    localStorage.setItem('carrito', JSON.stringify(carrito)) 
 }
 
 
