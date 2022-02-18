@@ -60,7 +60,9 @@
           <template id="template-carrito">
             <tr>
               <td>
-                <a href="#"><i class="far fa-times-circle"></i></a>
+                <a onclick="eliminarItem()"
+                  ><i class="far fa-times-circle" style="cursor: pointer"></i
+                ></a>
               </td>
               <td><img src="../img/productos/ropa1.jpg" alt="" /></td>
               <td class="titulo">Titulo</td>
@@ -71,6 +73,13 @@
               <td class="subtotal">Subtotal</td>
             </tr>
           </template>
+          <script>
+            function eliminarItem() {
+              const items = document.getElementById("items");
+              console.log("hola");
+              items.innerHTML = "carrito vacio";
+            }
+          </script>
         </tbody>
       </table>
     </section>

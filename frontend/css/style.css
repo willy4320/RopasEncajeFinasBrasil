@@ -228,9 +228,6 @@ button.normal {
   transition: 0.2s ease;
   position: relative;
 }
-#product1 .pro:hover {
-  transform: scale(0.95);
-}
 
 #product1 .pro img {
   max-height: 400px;
