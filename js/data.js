@@ -16,6 +16,7 @@ cards.addEventListener('click', e => { addCarrito(e) });
 const fetchData = async () => {
     const res = await fetch('../baseDatos/baseDatosRopa.json');
     const data = await res.json()
+    console.log('fullProducto:', data)
     pintarCards(data)
 }
 
@@ -23,10 +24,10 @@ const fetchData = async () => {
 const pintarCards = data => {
     data.forEach(item => {
         templateCard.querySelector('a').dataset.id = item.id
-        templateCard.querySelector('img').setAttribute("src", item.thumbnailUrl)
-        templateCard.querySelector('span').textContent = item.brand
-        templateCard.querySelector('h5').textContent = item.title
-        templateCard.querySelector('h4').textContent = item.price
+        templateCard.querySelector('img').setAttribute("src", item.imagen)
+        templateCard.querySelector('span').textContent = item.marca
+        templateCard.querySelector('h5').textContent = item.titulo
+        templateCard.querySelector('h4').textContent = item.precio
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
     })
@@ -46,9 +47,9 @@ const addCarrito = e => {
 const setCarrito = objeto =>{
     const producto = {
         id: objeto.querySelector('.btn-dark').dataset.id,
-        thumbnailUrl: objeto.querySelector('img').getAttribute('src'),
-        title: objeto.querySelector('h5').textContent,
-        price: objeto.querySelector('h4').textContent,
+        imagen: objeto.querySelector('img').getAttribute('src'),
+        titulo: objeto.querySelector('h5').textContent,
+        precio: objeto.querySelector('h4').textContent,
         cantidad: 1
         
     }

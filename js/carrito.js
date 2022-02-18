@@ -17,11 +17,11 @@ const pintarCarrito = () => {
     items.innerHTML = ''
 
     Object.values(carrito).forEach(producto => {
-        templateCarrito.querySelector('img').setAttribute("src", producto.thumbnailUrl)
-        templateCarrito.querySelector('.titulo').textContent = producto.title
-        templateCarrito.querySelector('.precio').textContent = producto.price
+        templateCarrito.querySelector('img').setAttribute("src", producto.imagen)
+        templateCarrito.querySelector('.titulo').textContent = producto.titulo
+        templateCarrito.querySelector('.precio').textContent = producto.precio
         templateCarrito.querySelector('input').textContent = producto.cantidad
-        templateCarrito.querySelector('.subtotal').textContent = producto.price * producto.cantidad
+        templateCarrito.querySelector('.subtotal').textContent = producto.precio * producto.cantidad
         
       
         const clone = templateCarrito.cloneNode(true)
