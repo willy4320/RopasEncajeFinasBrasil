@@ -1,53 +1,52 @@
-const items = document.getElementById('items')
-const templateCarrito = document.getElementById('template-carrito').content
-const templateFooter = document.getElementById('template-footer').content
-const footer = document.getElementById('footerCarrito')
-const fragment = document.createDocumentFragment()
-let carrito ={}
 
+const preCol = document.getElementById('preCol')
+const templatepreCarrito = document.getElementById('template-precarrito').content
+const footer2 = document.getElementById('footerCarrito')
+const templateFooter = document.getElementById('template-footer').content
 //llamar localStorage
 carrito = JSON.parse(localStorage.getItem('carrito'))
 document.addEventListener('DOMContentLoaded', e => {
     if (localStorage.getItem('carrito')) {
         console.log(carrito)
-        pintarCarrito()
+        pintarCarrito2()
     }
 });
 
-items.addEventListener('click', e => { btnAumentarDisminuir(e) })
+preCol.addEventListener('click', e => { btnAumentarDisminuir(e) })
 
 // Pintar carrito con productos seleccionados en ventana productos
-const pintarCarrito = () => {
-    items.innerHTML = ''
+
+const pintarCarrito2 = () => {
+    preCol.innerHTML = ''
 
     Object.values(carrito).forEach(producto => {
-        templateCarrito.querySelector('img').setAttribute("src", producto.imagen)
-        templateCarrito.querySelector('.titulo').textContent = producto.titulo
-        templateCarrito.querySelector('.precio').textContent = producto.precio
+        templatepreCarrito.querySelector('img').setAttribute("src", producto.imagen)
+        templatepreCarrito.querySelector('.titulo').textContent = producto.titulo
+        
         //botones start
-        templateCarrito.querySelector('.cant').textContent = producto.cantidad
-        templateCarrito.querySelector('.btn-info').dataset.id = producto.id
-        templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
+        templatepreCarrito.querySelector('.cant').textContent = producto.cantidad
+        templatepreCarrito.querySelector('.btn-info').dataset.id = producto.id
+        templatepreCarrito.querySelector('.btn-danger').dataset.id = producto.id
         //botones end
-        templateCarrito.querySelector('.subtotal').textContent = producto.precio * producto.cantidad
+        templatepreCarrito.querySelector('.subtotal').textContent = producto.precio * producto.cantidad
+        
       
-        const clone = templateCarrito.cloneNode(true)
+        const clone = templatepreCarrito.cloneNode(true)
         fragment.appendChild(clone)
     })
-    items.appendChild(fragment)
+    preCol.appendChild(fragment)
 
-    pintarFooter()
+    pintarFooter2()
 
     localStorage.setItem('carrito', JSON.stringify(carrito))
+
 }
 
-
-
-const pintarFooter = () => {
-    footer.innerHTML = ''
+const pintarFooter2 = () => {
+    footer2.innerHTML = ''
     
     if (Object.keys(carrito).length === 0) {
-        footer.innerHTML = `
+        footer2.innerHTML = `
         <th scope="row" colspan="5">Carrito vacío</th>
         `
         return
@@ -64,12 +63,12 @@ const pintarFooter = () => {
     const clone = templateFooter.cloneNode(true)
     fragment.appendChild(clone)
 
-    footer.appendChild(fragment)
+    footer2.appendChild(fragment)
 
     const boton = document.querySelector('#vaciar-carrito')
     boton.addEventListener('click', () => {
         carrito = {}
-        pintarCarrito()
+        pintarCarrito2()
     })
 
 }
@@ -80,7 +79,7 @@ const btnAumentarDisminuir = e => {
         const producto = carrito[e.target.dataset.id]
         producto.cantidad++
         carrito[e.target.dataset.id] = { ...producto }
-        pintarCarrito()
+        pintarCarrito2()
     }
 
     if (e.target.classList.contains('btn-danger')) {
@@ -91,10 +90,12 @@ const btnAumentarDisminuir = e => {
         } else {
             carrito[e.target.dataset.id] = {...producto}
         }
-        pintarCarrito()
+        pintarCarrito2()
     }
     e.stopPropagation()
 }
+
+
 
 
   
