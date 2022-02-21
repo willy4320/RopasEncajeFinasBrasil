@@ -3,11 +3,12 @@ const preCol = document.getElementById('preCol')
 const templatepreCarrito = document.getElementById('template-precarrito').content
 const footer2 = document.getElementById('footerCarrito')
 const templateFooter = document.getElementById('template-footer').content
+
+
 //llamar localStorage
-carrito = JSON.parse(localStorage.getItem('carrito'))
 document.addEventListener('DOMContentLoaded', e => {
     if (localStorage.getItem('carrito')) {
-        console.log(carrito)
+        carrito = JSON.parse(localStorage.getItem('carrito'))
         pintarCarrito2()
     }
 });
@@ -15,7 +16,6 @@ document.addEventListener('DOMContentLoaded', e => {
 preCol.addEventListener('click', e => { btnAumentarDisminuir(e) })
 
 // Pintar carrito con productos seleccionados en ventana productos
-
 const pintarCarrito2 = () => {
     preCol.innerHTML = ''
 
