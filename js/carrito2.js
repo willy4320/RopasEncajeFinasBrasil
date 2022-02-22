@@ -3,6 +3,9 @@ const preCol = document.getElementById('preCol')
 const templatepreCarrito = document.getElementById('template-precarrito').content
 const footer2 = document.getElementById('footerCarrito')
 const templateFooter = document.getElementById('template-footer').content
+
+const fragment = document.createDocumentFragment()
+let carrito = {}
 //llamar localStorage
 carrito = JSON.parse(localStorage.getItem('carrito'))
 document.addEventListener('DOMContentLoaded', e => {

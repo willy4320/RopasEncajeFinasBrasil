@@ -1,7 +1,6 @@
 const cards = document.getElementById('cards')
 const templateCard = document.getElementById('template-card').content
-const fragment = document.createDocumentFragment()
-let carrito = {}
+
 
 // Eventos
 // El evento DOMContentLoaded es disparado cuando el documento HTML ha sido completamente cargado y parseado
@@ -60,6 +59,7 @@ const setCarrito = objeto =>{
     carrito[producto.id] = { ...producto }
 
     console.log(producto)
+    pintarCarrito2()
 
     localStorage.setItem('carrito', JSON.stringify(carrito)) 
 }

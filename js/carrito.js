@@ -2,8 +2,9 @@ const items = document.getElementById('items')
 const templateCarrito = document.getElementById('template-carrito').content
 const templateFooter = document.getElementById('template-footer').content
 const footer = document.getElementById('footerCarrito')
+
 const fragment = document.createDocumentFragment()
-let carrito ={}
+
 
 //llamar localStorage
 carrito = JSON.parse(localStorage.getItem('carrito'))

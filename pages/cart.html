@@ -30,12 +30,17 @@
               ><i class="fas fa-shopping-cart"></i
             ></a>
           </li>
+
           <a href="#" id="leave"><i class="fas fa-outdent"></i></a>
         </ul>
       </div>
 
       <div id="mobileCart">
-        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        <li>
+          <a href="cart.html" class="active"
+            ><i class="fas fa-shopping-cart"></i
+          ></a>
+        </li>
       </div>
     </section>
 
@@ -60,7 +65,7 @@
           <template id="template-carrito">
             <tr>
               <td>
-                <a onclick="eliminarItem()"
+                <a
                   ><i class="far fa-times-circle" style="cursor: pointer"></i
                 ></a>
               </td>
@@ -75,13 +80,6 @@
               <td class="subtotal">Subtotal</td>
             </tr>
           </template>
-
-          <script>
-            function eliminarItem() {
-              const items = document.getElementById("items");
-              console.log("hola");
-            }
-          </script>
         </tbody>
       </table>
       <footer id="footerCarrito">Carrito Vacio</footer>
