@@ -59,7 +59,8 @@
 
             <div class="row2">
               <p class="subtotal">20</p>
-              <button id="botonEliminar" class="normal">Eliminar</button>
+
+              <button class="normal btn-eliminar">Eliminar</button>
             </div>
           </div>
         </template>
@@ -67,10 +68,10 @@
 
       <footer id="footerCarrito">Carrito Vacio</footer>
       <template id="template-footer">
-        <th scope="row" colspan="2">Total productos</th>
+        <th scope="row" colspan="2">Total productos:</th>
         <td>10</td>
         <td>
-          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+          <button class="btn btn-danger btn-sm normal" id="vaciar-carrito">
             vaciar todo
           </button>
         </td>
@@ -81,6 +82,25 @@
         <a href="cart.html"><button class="normal">Continuar</button></a>
       </div>
     </section>
+
+    <div id="subtotal">
+      <h3>Total Carrito</h3>
+      <table id="footer3">
+        <template id="template-finalizar">
+          <tr>
+            <td><strong>Cantidad De Productos</strong></td>
+            <td><strong class="cantidadProductos">5</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td>
+              <strong>$</strong> <strong class="totalCarrito"> 340</strong>
+            </td>
+          </tr>
+        </template>
+      </table>
+      <button class="normal">Finalizar Compra</button>
+    </div>
 
     <section id="page-header">
       <h2>#Sobre</h2>

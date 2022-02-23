@@ -49,6 +49,11 @@ button.normal {
   transition: 0.2s;
 }
 
+button.normal:hover {
+  color: #fff;
+  background: #088178;
+}
+
 #cart {
   overflow-x: auto;
 }
@@ -432,6 +437,7 @@ footer .copyright span {
   right: -700px;
   transition: all 0.3s ease;
   overflow-y: auto;
+  box-shadow: 0 0 200px 0 rgba(0, 0, 0, 0.4);
 }
 
 #preCarrito.active {
@@ -487,19 +493,13 @@ footer .copyright span {
 }
 
 #preCarrito .row1 .subRow p {
-  padding-right: 20px;
+  margin-right: 10px;
 }
 #preCarrito .row1 .subRow button {
-  height: 25px;
-  width: 25px;
-}
-
-#preCarrito .row2 button {
-  font-size: 12px;
-  margin-right: 20px;
-}
-
-#preCarrito .row1 button {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  cursor: pointer;
   font-size: 20px;
   margin-right: 1px;
 }
@@ -512,11 +512,28 @@ footer .copyright span {
   background-color: #d13232;
 }
 
+#preCarrito .row2 button {
+  font-size: 12px;
+  margin-right: 20px;
+}
+
 #preCarrito .carritoLink {
   text-align: center;
   padding: 50px 0;
 }
 
+#footerCarrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+#footerCarrito button {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 10px;
+}
 /*Inicio ends*/
 
 /*Shop starts*/
@@ -752,8 +769,11 @@ footer .copyright span {
   }
 
   #preCarrito .row2 button {
-    font-size: 8px;
-    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 15px 5px;
+    border-radius: 4px;
+    margin-left: 10px;
   }
 }
 @media (max-width: 1200px) {
