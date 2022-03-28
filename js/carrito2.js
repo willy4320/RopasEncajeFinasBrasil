@@ -78,10 +78,7 @@ const pintarFooter2 = () => {
         carrito = {}
         pintarCarrito2()
     })
-
 }
-
-
 
 const footer3 = document.getElementById('footer3')
 const templateFinalizar = document.getElementById('template-finalizar').content

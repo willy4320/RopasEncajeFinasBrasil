@@ -640,6 +640,9 @@ footer .copyright span {
 
 /*Cart starts*/
 
+#sideCart i {
+  cursor: pointer;
+}
 #cart table {
   width: 100%;
   border-collapse: collapse;
