@@ -39,6 +39,9 @@ const addCarrito = e => {
         // console.log(e.target.dataset.id)
         // console.log(e.target.parentElement)
         setCarrito(e.target.parentElement)
+        console.log("faz animacao")
+
+
     }
     e.stopPropagation()
 }

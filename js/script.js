@@ -28,7 +28,7 @@ if (sideCart) {
    })
  }
 
- if (sideCart2) {
+if (sideCart2) {
   sideCart2.addEventListener ('click', () => {
     preCarrito.classList.add('active');
    })
@@ -39,6 +39,8 @@ if(leave2){
     preCarrito.classList.remove('active');
    })
 }
+
+
 
 
  
