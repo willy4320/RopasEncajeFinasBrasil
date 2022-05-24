@@ -54,6 +54,29 @@ button.normal:hover {
   background: #088178;
 }
 
+
+#mProductos{
+  text-align: center;
+}
+
+button.mProductos {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: rgb(255, 255, 255);
+  background-color: #088178;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+button.mProductos:hover {
+  color: rgb(0, 0, 0);
+  background: #fddde4;
+}
+
 #cart {
   overflow-x: auto;
 }
