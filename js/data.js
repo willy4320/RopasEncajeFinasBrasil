@@ -1,15 +1,11 @@
-const cards = document.getElementById('cards')
+var cards = document.getElementById('cards')
 const templateCard = document.getElementById('template-card').content
+var fragment = document.createDocumentFragment()
 
-
-// Eventos
-// El evento DOMContentLoaded es disparado cuando el documento HTML ha sido completamente cargado y parseado
+//llamar localStorage
 document.addEventListener('DOMContentLoaded', e => { 
     fetchData() 
- 
 });
-
-cards.addEventListener('click', e => { addCarrito(e) });
 
 // Traer productos
 const fetchData = async () => {
@@ -30,51 +26,5 @@ const pintarCards = data => {
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
     })
-    cards.appendChild(fragment)
-    
+    cards.appendChild(fragment)  
 }
-
-const addCarrito = e => {
-    if (e.target.classList.contains('btn-dark')) {
-        // console.log(e.target.dataset.id)
-        // console.log(e.target.parentElement)
-        setCarrito(e.target.parentElement)
-        console.log("faz animacao")
-
-
-    }
-    e.stopPropagation()
-}
-
-const setCarrito = objeto =>{
-    const producto = {
-        id: objeto.querySelector('.btn-dark').dataset.id,
-        imagen: objeto.querySelector('img').getAttribute('src'),
-        titulo: objeto.querySelector('h5').textContent,
-        precio: objeto.querySelector('h4').textContent,
-        cantidad: 1
-        
-    }
-    if (carrito.hasOwnProperty(producto.id)) {
-        producto.cantidad = carrito[producto.id].cantidad + 1
-    }
-
-    carrito[producto.id] = { ...producto }
-
-    console.log(producto)
-    pintarCarrito2()
-
-    localStorage.setItem('carrito', JSON.stringify(carrito)) 
-}
-
-
-
-
-
-
-
-    
-
-
-
-

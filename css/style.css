@@ -555,27 +555,9 @@ footer .copyright span {
   color: #fff;
 }
 
-#pagination {
-  text-align: center;
-}
-
 #prodetails {
   display: flex;
   margin-top: 20px;
-}
-
-#pagination a {
-  text-decoration: none;
-  background-color: #088178;
-  padding: 15px 20px;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: 600;
-}
-
-#pagination a i {
-  font-size: 16px;
-  font-weight: 600;
 }
 
 #prodetails .single-pro-image {
@@ -640,9 +622,6 @@ footer .copyright span {
 
 /*Cart starts*/
 
-#sideCart i {
-  cursor: pointer;
-}
 #cart table {
   width: 100%;
   border-collapse: collapse;
