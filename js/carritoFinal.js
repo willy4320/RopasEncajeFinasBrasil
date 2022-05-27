@@ -25,6 +25,7 @@ const pintarCarrito2 = () => {
     Object.values(carrito).forEach(producto => {
         templatepreCarrito.querySelector('img').setAttribute("src", producto.imagen)
         templatepreCarrito.querySelector('.titulo').textContent = producto.titulo
+        templatepreCarrito.querySelector('.talla').textContent = producto.talla
         
         //botones start
         templatepreCarrito.querySelector('.cant').textContent = producto.cantidad

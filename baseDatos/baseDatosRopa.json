@@ -6,7 +6,7 @@
         "titulo": "Titulo",
         "precio": 20,
         "des": "descripcion",
-        "talla":"S",
+        "talla":"L",
         "stock": 2
         
     },
@@ -28,7 +28,7 @@
         "titulo": "Titulo",
         "precio": 20,
         "des": "descripcion",
-        "talla":"S",
+        "talla":"XL",
         "stock": 2
         
     },
@@ -39,7 +39,7 @@
         "titulo": "Titulo",
         "precio": 20,
         "des": "descripcion",
-        "talla":"S",
+        "talla":"M",
         "stock": 2
         
     },

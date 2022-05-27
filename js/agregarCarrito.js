@@ -37,6 +37,7 @@ const setCarrito = objeto =>{
         id: objeto.querySelector('.btn-dark').dataset.id,
         imagen: objeto.querySelector('img').getAttribute('src'),
         titulo: objeto.querySelector('h5').textContent,
+        talla: objeto.querySelector('span').textContent,
         precio: objeto.querySelector('h4').textContent,
         cantidad: 1
     }
@@ -68,7 +69,8 @@ const pintarCarrito = () => {
     Object.values(carrito).forEach(producto => {
         templatepreCarrito.querySelector('img').setAttribute("src", producto.imagen)
         templatepreCarrito.querySelector('.titulo').textContent = producto.titulo
-        
+        //templatepreCarrito.querySelector('.talla').textContent = producto.talla
+
         //botones start
         templatepreCarrito.querySelector('.cant').textContent = producto.cantidad
         templatepreCarrito.querySelector('.btn-info').dataset.id = producto.id

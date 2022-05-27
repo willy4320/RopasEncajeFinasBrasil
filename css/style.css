@@ -617,11 +617,7 @@ footer .copyright span {
   font-size: 26px;
 }
 
-#prodetails .single-pro-details select {
-  display: block;
-  padding: 5px 10px;
-  margin-bottom: 10px;
-}
+
 #prodetails .single-pro-details input {
   width: 50px;
   height: 47px;
@@ -752,6 +748,12 @@ footer .copyright span {
   padding: 10px;
   font-size: 13px;
 }
+
+#prodetails .masMenos{
+  display: flex;
+  flex-direction: row;
+}
+
 
 /*Cart ends*/
 

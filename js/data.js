@@ -20,7 +20,7 @@ const pintarCards = data => {
     data.forEach(item => {
         templateCard.querySelector('a').dataset.id = item.id
         templateCard.querySelector('img').setAttribute("src", item.imagen)
-        templateCard.querySelector('span').textContent = item.marca
+        templateCard.querySelector('span').textContent = "Talla "+item.talla
         templateCard.querySelector('h5').textContent = item.titulo
         templateCard.querySelector('h4').textContent = item.precio
         const clone = templateCard.cloneNode(true)
