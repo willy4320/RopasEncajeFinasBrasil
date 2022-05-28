@@ -33,16 +33,22 @@ const addCarrito = e => {
 }
 
 const setCarrito = objeto =>{
+    
+    
+
     const producto = {
+        
         id: objeto.querySelector('.btn-dark').dataset.id,
         imagen: objeto.querySelector('img').getAttribute('src'),
         titulo: objeto.querySelector('h5').textContent,
         talla: objeto.querySelector('span').textContent,
         precio: objeto.querySelector('h4').textContent,
+        stock: objeto.querySelector('h3').textContent,
         cantidad: 1
     }
     
-    console.log(producto)
+    
+    console.log(producto.stock)
 
 
     
@@ -57,8 +63,12 @@ const setCarrito = objeto =>{
     carrito[producto.id] = { ...producto }
     
     
-   
-    pintarCarrito()
+    if(producto.stock != 0){
+        pintarCarrito()
+    }else{
+        console.log("Sin Stock")
+    }
+    
 }
 
 // Pintar carrito con productos seleccionados en ventana productos

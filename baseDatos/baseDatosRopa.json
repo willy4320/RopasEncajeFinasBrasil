@@ -1,5 +1,16 @@
 [
     {
+        "id": 10,
+        "imagen": "../img/productos/ropa1.jpg",
+        "marca": "marca",
+        "titulo": "Stock cero",
+        "precio": 20,
+        "des": "descripcion",
+        "talla":"L",
+        "stock": 0
+        
+    },
+    {
         "id": 1,
         "imagen": "../img/productos/ropa1.jpg",
         "marca": "marca",

@@ -318,6 +318,9 @@ button.mProductos:hover {
   font-weight: 700;
   color: #088178;
 }
+#product1 .pro .des h3{
+  display: none;
+}
 
 #product1 .pro .cart {
   width: 40px;

@@ -18,11 +18,18 @@ const fetchData = async () => {
 // Pintar productos
 const pintarCards = data => {
     data.forEach(item => {
+
+        if(item.stock==0){
+            templateCard.querySelector('h4').textContent = "Sin Stock "
+        }
         templateCard.querySelector('a').dataset.id = item.id
         templateCard.querySelector('img').setAttribute("src", item.imagen)
         templateCard.querySelector('span').textContent = "Talla "+item.talla
         templateCard.querySelector('h5').textContent = item.titulo
         templateCard.querySelector('h4').textContent = item.precio
+        templateCard.querySelector('h3').textContent = item.stock
+
+        
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
     })
