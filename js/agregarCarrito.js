@@ -62,12 +62,9 @@ const setCarrito = objeto =>{
     
     carrito[producto.id] = { ...producto }
     
-    
-    if(producto.stock != 0){
-        pintarCarrito()
-    }else{
-        console.log("Sin Stock")
-    }
+ 
+    pintarCarrito()
+
     
 }
 

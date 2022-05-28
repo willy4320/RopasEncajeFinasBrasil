@@ -19,10 +19,11 @@ const fetchData = async () => {
 const pintarCards = data => {
     data.forEach(item => {
 
-        if(item.stock != 0){
-           
         
-            templateCard.querySelector('a').dataset.id = item.id
+        if(item.stock == 0){
+            
+        
+            templateCard.querySelector('p').textContent = "ID producto: "+item.id
             templateCard.querySelector('img').setAttribute("src", item.imagen)
             templateCard.querySelector('span').textContent = "Talla "+item.talla
             templateCard.querySelector('h5').textContent = item.titulo
@@ -33,6 +34,7 @@ const pintarCards = data => {
             const clone = templateCard.cloneNode(true)
             fragment.appendChild(clone)
         }
+        
     })
     cards.appendChild(fragment)  
 }
