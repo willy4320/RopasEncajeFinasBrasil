@@ -37,6 +37,7 @@ const addCarrito = e => {
         //console.log(e.target.parentElement)
         setCarrito(e.target.parentElement)
         
+        
     }
     e.stopPropagation()
 }
@@ -77,20 +78,6 @@ const setCarrito = objeto =>{
     
 }
 
-
-
-
-const gerenciarStock = data => {
-
-    //console.log(JSON.stringify(data))
-    data.forEach(item => {
-
-        console.log(JSON.stringify(item.stock))
-        
-        
-    })
-    cards.appendChild(fragment)  
-}
 
 // Pintar carrito con productos seleccionados en ventana productos
 
@@ -187,16 +174,15 @@ const pintarFooter3 = () => {
 
 const btnAumentarDisminuir = e => {
     // console.log(e.target.classList.contains('btn-info'))
+    const producto = carrito[e.target.dataset.id]
     if (e.target.classList.contains('btn-info')) {
-        const producto = carrito[e.target.dataset.id]
         producto.cantidad++
         carrito[e.target.dataset.id] = { ...producto }
-
+        
         pintarCarrito()
     }
 
     if (e.target.classList.contains('btn-danger')) {
-        const producto = carrito[e.target.dataset.id]
         producto.cantidad--
         if (producto.cantidad === 0) {
             delete carrito[e.target.dataset.id]
@@ -204,15 +190,37 @@ const btnAumentarDisminuir = e => {
             carrito[e.target.dataset.id] = {...producto}
         }
         pintarCarrito()
+        
     }
 
     if (e.target.classList.contains('btn-eliminar')) {
-        const producto = carrito[e.target.dataset.id]
+        
         producto.cantidad===0
         delete carrito[e.target.dataset.id]
         pintarCarrito()
+        
     }
 
     
     e.stopPropagation()
+
+    gerenciarStock(data, producto.id, producto.cantidad)
+}
+
+
+const gerenciarStock = (data, Id, Stock) => {
+
+    data.forEach(item => {
+        
+        if(item.id == Id){
+
+            if(item.stock >= Stock){
+                item.stock = item.stock - Stock
+                console.log(item.id)
+                console.log(item.stock)
+            }
+            
+        }
+    })
+    console.log(data)
 }
