@@ -12,15 +12,18 @@ const fetchData = async () => {
     const res = await fetch('../baseDatos/baseDatosRopa.json');
     const data = await res.json()
     console.log('fullProducto:', data)
+   
     pintarCards(data)
+    gerenciarStock(data)
 }
 
 // Pintar productos
 const pintarCards = data => {
     data.forEach(item => {
 
+        //console.log("data: "+item.stock)
         if(item.stock != 0){
-           
+            
         
             templateCard.querySelector('a').dataset.id = item.id
             templateCard.querySelector('img').setAttribute("src", item.imagen)
@@ -36,3 +39,6 @@ const pintarCards = data => {
     })
     cards.appendChild(fragment)  
 }
+
+
+

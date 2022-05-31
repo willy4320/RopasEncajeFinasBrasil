@@ -532,10 +532,12 @@ footer .copyright span {
 
 #preCarrito .row1 .btn-info {
   background-color: #088178;
+  color: #000;
 }
 
 #preCarrito .row1 .btn-danger {
   background-color: #d13232;
+  color: #000;
 }
 
 #preCarrito .row2 button {

@@ -7,7 +7,12 @@ const templateFooter = document.getElementById('template-footer').content
 
 var fragment = document.createDocumentFragment()
 
+
 let carrito = {}
+
+
+
+
 
 //llamar localStorage
 document.addEventListener('DOMContentLoaded', e => {
@@ -18,6 +23,10 @@ document.addEventListener('DOMContentLoaded', e => {
     }
 });
 
+
+
+
+
 cards.addEventListener('click', e => { addCarrito(e) });
 
 preCol.addEventListener('click', e => { btnAumentarDisminuir(e) })
@@ -25,7 +34,7 @@ preCol.addEventListener('click', e => { btnAumentarDisminuir(e) })
 const addCarrito = e => {
     if (e.target.classList.contains('btn-dark')) {
         // console.log(e.target.dataset.id)
-        console.log(e.target.parentElement)
+        //console.log(e.target.parentElement)
         setCarrito(e.target.parentElement)
         
     }
@@ -66,6 +75,21 @@ const setCarrito = objeto =>{
     pintarCarrito()
 
     
+}
+
+
+
+
+const gerenciarStock = data => {
+
+    //console.log(JSON.stringify(data))
+    data.forEach(item => {
+
+        console.log(JSON.stringify(item.stock))
+        
+        
+    })
+    cards.appendChild(fragment)  
 }
 
 // Pintar carrito con productos seleccionados en ventana productos
@@ -167,6 +191,7 @@ const btnAumentarDisminuir = e => {
         const producto = carrito[e.target.dataset.id]
         producto.cantidad++
         carrito[e.target.dataset.id] = { ...producto }
+
         pintarCarrito()
     }
 
