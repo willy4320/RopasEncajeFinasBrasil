@@ -97,10 +97,6 @@ const pintarCarrito = () => {
         //botones end
         templatepreCarrito.querySelector('.subtotal').textContent = "$ "+(producto.precio * producto.cantidad)
         
-
-
-       
-      
         const clone = templatepreCarrito.cloneNode(true)
         fragment.appendChild(clone)
     })
@@ -206,7 +202,6 @@ const btnAumentarDisminuir = e => {
 
     gerenciarStock(data, producto.id, producto.cantidad)
 }
-
 
 const gerenciarStock = (data, Id, Stock) => {
 
