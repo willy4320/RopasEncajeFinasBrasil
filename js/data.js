@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
 // Traer productos
 const fetchData = async () => {
-    const res = await fetch('../BackEnd/src/public/baseDatosRopa.json');
+    const res = await fetch('../BackEnd/src/baseDatosRopa.json');
     const data = await res.json()
     
 
