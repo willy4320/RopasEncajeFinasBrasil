@@ -3,9 +3,10 @@ const path    = require('path');
 const logger  = require('morgan');
 
 const app = express();
+const port = process.env.PORT || 5000
 
 // Settings
-app.set('port', 5000);
+app.set('port', port);
 app.set('views', path.resolve(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
