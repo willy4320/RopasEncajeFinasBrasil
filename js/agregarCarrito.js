@@ -200,22 +200,6 @@ const btnAumentarDisminuir = e => {
     
     e.stopPropagation()
 
-    gerenciarStock(data, producto.id, producto.cantidad)
+   
 }
 
-const gerenciarStock = (data, Id, Stock) => {
-
-    data.forEach(item => {
-        
-        if(item.id == Id){
-
-            if(item.stock >= Stock){
-                item.stock = item.stock - Stock
-                console.log(item.id)
-                console.log(item.stock)
-            }
-            
-        }
-    })
-    console.log(data)
-}
