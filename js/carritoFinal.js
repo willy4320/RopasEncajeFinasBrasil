@@ -1,4 +1,6 @@
 
+const finalizarCompra = document.getElementById('subtotal')
+
 const preCol = document.getElementById('preCol')
 const templatepreCarrito = document.getElementById('template-precarrito').content
 const footer2 = document.getElementById('footerCarrito')
@@ -6,16 +8,33 @@ const templateFooter = document.getElementById('template-footer').content
 
 const fragment = document.createDocumentFragment()
 let carrito = {}
+let data = {}
 //llamar localStorage
 carrito = JSON.parse(localStorage.getItem('carrito'))
 document.addEventListener('DOMContentLoaded', e => {
+    fetchData(data)
     if (localStorage.getItem('carrito')) {
         console.log(carrito)
         pintarCarrito2()
     }
+    
 });
 
+
+const fetchData = async (data) => {
+    const res = await fetch('https://api-ropas-nodejs.herokuapp.com/baseDatosRopa.json');
+    data = await res.json()
+
+    console.log('fullProducto:', data)
+   
+}
+
 preCol.addEventListener('click', e => { btnAumentarDisminuir(e) })
+
+finalizarCompra.addEventListener('click', e => { gerenciarStock(e) })
+
+
+
 
 // Pintar carrito con productos seleccionados en ventana productos
 
@@ -48,6 +67,8 @@ const pintarCarrito2 = () => {
     pintarFooter3()
 
     localStorage.setItem('carrito', JSON.stringify(carrito))
+
+    
 
 }
 
@@ -139,6 +160,43 @@ const btnAumentarDisminuir = e => {
 
     
     e.stopPropagation()
+}
+
+
+const gerenciarStock = e => {
+    
+
+    
+    if (e.target.classList.contains('finalizarCompra')) {
+        const producto = carrito[e.target.dataset.id]
+
+
+      
+        
+            
+        data.forEach(item => {
+            if(item.id == producto.id && item.stock >= producto.cantidad){
+                item.stock = item.stock-producto.cantidad
+            }
+            
+        })
+          
+        
+
+        // Pasar de Objeto js a JSON 
+        console.log("Data Updated:", data)
+        
+
+        // Mandar JSON al Backend
+        
+
+
+        delete carrito[e.target.dataset.id]
+        pintarCarrito2()
+    }
+
+    e.stopPropagation()
+
 }
 
 

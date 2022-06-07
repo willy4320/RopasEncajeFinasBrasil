@@ -196,7 +196,6 @@ const btnAumentarDisminuir = e => {
         pintarCarrito()
         
     }
-
     
     e.stopPropagation()
 
